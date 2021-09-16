@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+:root {
+  --bs-primary: #781313;
+  --bs-secondary: #1c1c1c;
+  --bs-primary-rgb: 104, 17, 17;
+  --bs-secondary-rgb: 28, 28, 28; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-secondary);
+  color: white;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.navbar-expand-md--rojoT {
+  background-color: var(--bs-primary);
+  width: 98vw; }
+  .navbar-expand-md--rojoT .navbar__logoT {
+    padding: 0 1em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 2em;
+    flex-grow: 1;
+    animation: logoAnimado infinite 10s 0s; }
+  .navbar-expand-md--rojoT .navbar__link {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: white !important; }
+    .navbar-expand-md--rojoT .navbar__link:hover {
+      font-weight: 400; }
+  .navbar-expand-md--rojoT .navbar__link--tienda {
+    color: black !important;
+    font-weight: 800; }
+    .navbar-expand-md--rojoT .navbar__link--tienda:hover {
+      color: white !important; }
+
+.grilla {
+  width: 98vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.3fr 1fr 1fr auto auto auto;
+  grid-row-gap: 3em;
+  grid-column-gap: 1em;
+  justify-items: stretch;
+  grid-template-areas: "header" "biografias" "noticiaG" "noticiasC" "spotify" "footer"; }
+
+header {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  grid-area: header; }
+  header .header__title {
+    position: absolute;
+    left: 0.4em;
+    bottom: 0em;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 5em;
+    z-index: 1; }
+    header .header__title p {
+      display: inline-block; }
+    header .header__title .p1 {
+      color: white; }
+    header .header__title .p2 {
+      color: rgba(255, 255, 255, 0.5); }
+    header .header__title .p3 {
+      color: rgba(255, 255, 255, 0.333333); }
+    header .header__title .p4 {
+      color: rgba(255, 255, 255, 0.25); }
+    header .header__title .p5 {
+      color: rgba(255, 255, 255, 0.2); }
+    header .header__title .p6 {
+      color: rgba(255, 255, 255, 0.166667); }
+    header .header__title .p7 {
+      color: rgba(255, 255, 255, 0.142857); }
+    header .header__title .p8 {
+      color: rgba(255, 255, 255, 0.125); }
+    header .header__title .p9 {
+      color: rgba(255, 255, 255, 0.111111); }
+  header .header__video {
+    position: absolute;
+    left: -5em;
+    height: 100%;
+    align-content: center;
+    min-height: 100px; }
+
+.seccionesMain {
+  padding-left: 1em;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  /* border-bottom: white solid 2px; */ }
+
+.subtitulo {
+  padding: 0.5em 2em; }
+
+#containerBiografias {
+  grid-area: biografias; }
+  #containerBiografias .containerBiografias__containerCarousel {
+    width: 100vw;
+    display: flex;
+    justify-content: center; }
+    #containerBiografias .containerBiografias__containerCarousel .containerBiografias__containerItem {
+      width: 100%;
+      height: 100%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      position: relative; }
+      #containerBiografias .containerBiografias__containerCarousel .containerBiografias__containerItem .containerBiografias__imgBio {
+        width: 100%;
+        height: 100%; }
+        #containerBiografias .containerBiografias__containerCarousel .containerBiografias__containerItem .containerBiografias__imgBio:hover {
+          opacity: 0.4;
+          border: outset 2px white;
+          cursor: pointer; }
+        #containerBiografias .containerBiografias__containerCarousel .containerBiografias__containerItem .containerBiografias__imgBio:active {
+          animation: flipOutY 1 1s; }
+      #containerBiografias .containerBiografias__containerCarousel .containerBiografias__containerItem .containerBiografias__texto {
+        position: absolute;
+        transform: rotate(-90deg);
+        text-align: right;
+        right: -1.8em;
+        bottom: 2.5em;
+        font-weight: 400;
+        font-size: 1.5em;
+        background-color: #1c1c1cb0; }
+  #containerBiografias .containerBiografias__icono {
+    font-size: 30pt;
+    opacity: 0.8;
+    height: 100%;
+    width: 40pt;
+    margin-left: 25pt;
+    margin-right: 25pt; }
+
+.icono {
+  font-size: 30pt;
+  color: black; }
+
+.containerNoticiaG {
+  font-size: 1em;
+  padding: 0 2em;
+  grid-area: noticiaG; }
+  .containerNoticiaG .containerNoticiaG__img {
+    width: 100%;
+    padding-bottom: 1em; }
+
+aside {
+  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8em;
+  grid-area: noticiasC; }
+  aside .aside__containerNoticiaC {
+    width: 100%; }
+    aside .aside__containerNoticiaC .aside__img {
+      width: 100%; }
+
+.containerSpotify {
+  margin-top: 2em;
+  padding: 0 2em;
+  grid-area: spotify; }
+
+footer {
+  background-color: var(--bs-primary);
+  padding: 1em 2em;
+  font-size: 0.8em;
+  grid-area: footer; }
+  footer .footer__containerRedes {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 5em; }
+    footer .footer__containerRedes .footer__icono {
+      font-size: 30pt;
+      color: black;
+      margin: 0 0.15em; }
+    footer .footer__containerRedes .footer__iconoFacebook:hover {
+      color: #4267B2; }
+    footer .footer__containerRedes .footer__iconoInstagram:hover {
+      color: #8935c1; }
+    footer .footer__containerRedes .footer__iconoSpotify:hover {
+      color: #1DB954; }
+    footer .footer__containerRedes .footer__iconoTwitter:hover {
+      color: #1DA1F2; }
+
+.containerError {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .containerError .containerError__title {
+    font-size: 8em;
+    font-weight: 800; }
+  .containerError .containerError__button {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white; }
+
+.modal__header--bio {
+  display: flex;
+  flex-direction: column; }
+  .modal__header--bio .modal__x {
+    display: flex;
+    align-items: flex-end;
+    width: 100%; }
+  .modal__header--bio .modal__img {
+    width: 100%;
+    display: block;
+    margin-top: 0.5em; }
+    .modal__header--bio .modal__img img {
+      width: 100%;
+      border-radius: 0.5em; }
+
+.modal__texto {
+  color: var(--bs-secondary); }
+
+@media only screen and (min-width: 768px) {
+  .grilla {
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 0.6fr 1fr auto auto auto;
+    grid-template-areas: "header header" "biografias biografias" "noticiaG noticiasC" "spotify spotify" "footer footer"; }
+  header h1 {
+    bottom: 0.5em; }
+  .containerBiografias__containerCarousel .containerBiografias__containerItem .containerBiografias__texto {
+    font-weight: 600 !important;
+    font-size: 2em;
+    z-index: -1; }
+  .containerNoticiaG {
+    padding: 0 0 0 2em; }
+  aside {
+    padding: 0 2em 0 0; } }
+
+@media only screen and (min-width: 950px) {
+  .navbar-expand-md--rojoT {
+    width: 99vw; }
+  .navbar__logoT {
+    text-align: left;
+    padding-left: 2em; } }
+
+@keyframes logoAnimado {
+  0% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1); }
+  80% {
+    transform: scale(0.85); }
+  90% {
+    transform: scale(1.15); } }

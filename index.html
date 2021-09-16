@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+  <meta name="keywords" content="Cultura, Música, Tango, Argentina, Bandoneón, Gardel"> 
+  <meta name="description" content="Página dedicada al conocimiento histórico y estético del tango y sus exponentes">
+  
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Tangófilx</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark navbar-expand-md--rojoT" aria-label="Tangófile navbar">
+    <div class="container-fluid">
+      <a class="navbar__logoT" href="#">TANGÓFILX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTangolifx" aria-controls="navbarTangolifx" aria-expanded="false" aria-label="Botón navegador">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTangolifx">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link navbar__link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar__link" aria-current="page" href="#tituloBio">Biografías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar__link" aria-current="page" href="#tituloArt">Artículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar__link" aria-current="page" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item navbar__link">
+            <a class="nav-link  navbar__link--tienda" aria-current="page" href="./store.html">Tienda</a>
+          </li>
+        
+        
+        </ul>
+        <form>
+          <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="grilla">
+    <header>
+      <h1 class="header__title"><p class="p1">T</p><p class="p2">A</p><p class="p3">N</p><p class="p4">G</p><p class="p5">O</p><p class="p6">F</p><p class="p7">I</p><p class="p8">L</p><p class="p9">X</p></h1>
+      <video class="header__video" loop muted autoplay>
+        <source src="./assets/img/videofondo.mp4" />
+        <source src="./assets/img/videofondo.avi" />
+      </video>
+    </header>
+
+    <section id="containerBiografias">
+      <h2 class="seccionesMain" id="tituloBio">BIOGRAFÍAS</h2>
+      <h3 class="subtitulo">Intérpretes</h3>
+
+
+
+      <!-- Carrusel de los intérpretes -->
+      <div id="carouselInterpretes" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselInterpretes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselInterpretes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselInterpretes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="containerBiografias__containerCarousel">
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/amelitaBaltarBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Amelita Baltar" data-bs-toggle="modal" data-bs-target="#amelitaBaltarModal" />
+                <p class="containerBiografias__texto">Amelita Baltar</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/carlosGarciaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos García" data-bs-toggle="modal" data-bs-target="#carlosGarciaModal" />
+                <p class="containerBiografias__texto">Carlos García</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/carlosgardelbio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Gardel" data-bs-toggle="modal" data-bs-target="#carlosGardelModal" />
+                <p class="containerBiografias__texto">Carlos Gardel</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/robertoGoyenecheBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Roberto Goyeneche" data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                <p class="containerBiografias__texto">Roberto Goyeneche</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/titaMerelloBio.jpg" class="d-block containerBiografias__imgBio"alt="Biografía de Tita Merello"  data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                <p class="containerBiografias__texto">Tita Merello</p>
+              </div>
+            </div>
+        </div>
+
+          <div class="carousel-item">
+              <div class="containerBiografias__containerCarousel" data-bs-interval="false">
+                  <div class="containerBiografias__containerItem">
+                    <img src="./assets/img/imgBio/amelitaBaltarBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Amelita Baltar" data-bs-toggle="modal" data-bs-target="#amelitaBaltarModal" />
+                    <p class="containerBiografias__texto">Amelita Baltar</p>
+                  </div>
+                  <div class="containerBiografias__containerItem">
+                    <img src="./assets/img/imgBio/carlosGarciaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos García" data-bs-toggle="modal" data-bs-target="#carlosGarciaModal" />
+                    <p class="containerBiografias__texto">Carlos García</p>
+                  </div>
+                  <div class="containerBiografias__containerItem">
+                    <img src="./assets/img/imgBio/carlosgardelbio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Gardel" data-bs-toggle="modal" data-bs-target="#carlosGardelModal" />
+                    <p class="containerBiografias__texto">Carlos Gardel</p>
+                  </div>
+                  <div class="containerBiografias__containerItem">
+                    <img src="./assets/img/imgBio/robertoGoyenecheBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Roberto Goyeneche" data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                    <p class="containerBiografias__texto">Roberto Goyeneche</p>
+                  </div>
+                  <div class="containerBiografias__containerItem">
+                    <img src="./assets/img/imgBio/titaMerelloBio.jpg" class="d-block containerBiografias__imgBio"alt="Biografía de Tita Merello"  data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                    <p class="containerBiografias__texto">Tita Merello</p>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="containerBiografias__containerCarousel" data-bs-interval="false">
+                <div class="containerBiografias__containerItem">
+                  <img src="./assets/img/imgBio/amelitaBaltarBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Amelita Baltar" data-bs-toggle="modal" data-bs-target="#amelitaBaltarModal" />
+                  <p class="containerBiografias__texto">Amelita Baltar</p>
+                </div>
+                <div class="containerBiografias__containerItem">
+                  <img src="./assets/img/imgBio/carlosGarciaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos García" data-bs-toggle="modal" data-bs-target="#carlosGarciaModal" />
+                  <p class="containerBiografias__texto">Carlos García</p>
+                </div>
+                <div class="containerBiografias__containerItem">
+                  <img src="./assets/img/imgBio/carlosgardelbio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Gardel" data-bs-toggle="modal" data-bs-target="#carlosGardelModal" />
+                  <p class="containerBiografias__texto">Carlos Gardel</p>
+                </div>
+                <div class="containerBiografias__containerItem">
+                  <img src="./assets/img/imgBio/robertoGoyenecheBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Roberto Goyeneche" data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                  <p class="containerBiografias__texto">Roberto Goyeneche</p>
+                </div>
+                <div class="containerBiografias__containerItem">
+                  <img src="./assets/img/imgBio/titaMerelloBio.jpg" class="d-block containerBiografias__imgBio"alt="Biografía de Tita Merello"  data-bs-toggle="modal" data-bs-target="#robertoGoyenecheModal" />
+                  <p class="containerBiografias__texto">Tita Merello</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev containerBiografias__icono" type="button" data-bs-target="#carouselInterpretes" data-bs-slide="prev">
+          <i class="fas fa-chevron-circle-left"></i>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next containerBiografias__icono" type="button" data-bs-target="#carouselInterpretes" data-bs-slide="next">
+          <i class="fas fa-chevron-circle-right"></i>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+
+
+
+
+      <!-- Carrousel de compositorxs y arregladorxs -->
+      <h3 class="subtitulo">Compositorxs y arregladrxs</h3>
+
+      <div id="carouselCompositorxs" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCompositorxs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCompositorxs" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCompositorxs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="false">
+            <div class="containerBiografias__containerCarousel">
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/anibalTroiloBio.jpg"  class="d-block containerBiografias__imgBio" alt="Biografía de Anibal Troilo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Aníbal Troilo</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/astorPiazzollaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Astor Piazzolla" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Astor Piazzolla</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/carlosDisarliBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Di Sarli" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Carlos Di Sarli</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/horacioSalganBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Horacio Salgán" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Horacio Salgán</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/juanDarienzoBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Juan D'Arienzo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Juan D'Arienzo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="false">
+            <div class="containerBiografias__containerCarousel">
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/anibalTroiloBio.jpg"  class="d-block containerBiografias__imgBio" alt="Biografía de Anibal Troilo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Aníbal Troilo</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/astorPiazzollaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Astor Piazzolla" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Astor Piazzolla</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/carlosDisarliBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Di Sarli" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Carlos Di Sarli</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/horacioSalganBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Horacio Salgán" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Horacio Salgán</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/juanDarienzoBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Juan D'Arienzo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Juan D'Arienzo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="false">
+            <div class="containerBiografias__containerCarousel">
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/anibalTroiloBio.jpg"  class="d-block containerBiografias__imgBio" alt="Biografía de Anibal Troilo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Aníbal Troilo</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/astorPiazzollaBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Astor Piazzolla" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Astor Piazzolla</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/carlosDisarliBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Carlos Di Sarli" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Carlos Di Sarli</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/horacioSalganBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Horacio Salgán" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Horacio Salgán</p>
+              </div>
+              <div class="containerBiografias__containerItem">
+                <img src="./assets/img/imgBio/juanDarienzoBio.jpg" class="d-block containerBiografias__imgBio" alt="Biografía de Juan D'Arienzo" data-bs-toggle="modal" data-bs-target="#anibalTroiloModal" />
+                <p class="containerBiografias__texto">Juan D'Arienzo</p>
+              </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev  containerBiografias__icono" type="button" data-bs-target="#carouselCompositorxs" data-bs-slide="prev">
+          <i class="fas fa-chevron-circle-left"></i>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next  containerBiografias__icono" type="button" data-bs-target="#carouselCompositorxs" data-bs-slide="next">
+          <i class="fas fa-chevron-circle-right"></i>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+   
+
+    <!-- sección de artículos -->
+    <div class="containerNoticiaG">
+      <h2 class="seccionesMain" id="tituloArt">ARTÍCULOS</h2>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        similique vitae tenetur in autem labore amet consequatur soluta
+        necessitatibus aliquid.
+      </p>
+      <img src="./assets/img/gardel.jpg" alt="" class="containerNoticiaG__img" />
+    </div>
+    <aside>
+      <div class="aside__containerNoticiaC">
+        <img src="./assets/img/bailetango.jpg" alt="" class="aside__img"/>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+          voluptate et voluptatum nulla quae, quis distinctio eius voluptatibus
+          molestias quia?
+        </p>
+      </div>
+      <div class="aside__containerNoticiaC">
+        <img src="./assets/img/bailetango.jpg" alt="" class="aside__img"/>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+          voluptate et voluptatum nulla quae, quis distinctio eius voluptatibus
+          molestias quia?
+        </p>
+      </div>
+    </aside>
+
+
+
+  <div class="containerSpotify">
+    <h3 class="subtitulo">Nuestra selección de tangos</h3>
+          <iframe class="spotify" src="https://open.spotify.com/embed/playlist/0OPr3EaupXKK69CUmkSGC3?theme=0" width="100%"
+        height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+
+
+
+  <footer id="contacto">
+        <div>
+          <h4>Copyright</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            soluta enim odio ea qui eum magnam labore cupiditate aliquid dolore!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+            minima dignissimos consectetur officiis ad odit ex ipsa sint iusto
+            doloribus. Alias saepe aut esse amet quasi? Eum voluptate ducimus
+            qui.
+          </p>
+
+
+        
+          <div class="footer__containerRedes">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-brands fa-facebook-square footer__icono footer__iconoFacebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-brands fa-instagram footer__icono footer__iconoInstagram"></i></a>
+            <a href="https://open.spotify.com/" target="_blank" rel="noopener"><i class="fab fa-brands fa-spotify footer__icono footer__iconoSpotify"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-brands fa-twitter footer__icono footer__iconoTwitter"></i></a>
+          </div>
+
+        </div>
+        
+  </footer>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  
+  <!-- Modal para la biografía de Gardel -->
+
+  <div class="modal fade modalContainer" id="carlosGardelModal" tabindex="-1" aria-labelledby="GardelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/carlosGardelBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>Carlos Gardel</strong> fue un cantante, compositor y actor
+            de cine. Es el más conocido representante (del género) en la
+            historia del tango. Iniciador y máximo exponente del tango canción,​
+            fue uno de los intérpretes más importantes de la música popular
+            mundial en la primera mitad del siglo xx, por la calidad de su voz,
+            por la cantidad de discos vendidos (como cantante y como
+            compositor), por sus numerosas películas relacionadas con el tango y
+            por su repercusión mundial.​ <br />
+            No hay unanimidad sobre el lugar y la fecha de su nacimiento. La
+            hipótesis uruguayista sostiene que nació en Tacuarembó (Uruguay), un
+            11 de diciembre entre 1883 y 1887. La hipótesis francesista sostiene
+            que nació en Toulouse (Francia) el 11 de diciembre de 1890. Hay
+            unanimidad en el hecho de que vivió desde su infancia en Buenos
+            Aires y se nacionalizó argentino en 1923. Falleció el 24 de junio de
+            1935 en Medellín, Colombia, en un accidente aéreo. <br />
+            La persona y la imagen de Gardel han sido objeto de idolatría
+            popular, especialmente en Argentina y Uruguay, colocándolo en un
+            lugar de mito y símbolo cultural que aún mantiene su vigencia.​
+            <br />
+            En 2003 la voz de Gardel fue registrada por la Unesco en el programa
+            Memoria del Mundo, dedicado a la preservación de documentos
+            pertenecientes al patrimonio histórico de los pueblos del mundo. Al
+            mismo tiempo, se hace alusión a su voz y su recuerdo con la frase
+            "cada día, canta mejor".
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal para la biografía de Baltar -->
+
+  <div class="modal fade modalContainer" id="amelitaBaltarModal" tabindex="-1" aria-labelledby="BaltarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/amelitaBaltarBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>María Amelia Baltar</strong>, conocida como Amelita Baltar, (Buenos Aires, 24 de septiembre de 1940) es una cantante argentina.
+            Desde sus comienzos como cantante folklórica, Amelita Baltar se destacó por su voz y el talento dramático que se manifiesta en sus interpretaciones. Su primer disco como solista en 1968, la lleva a obtener el premio revelación en el “Festival nacional del disco” realizado en Mar del Plata. <br>
+
+              En ese mismo año es escuchada por Astor Piazzolla quien la invita a protagonizar su operita “María de Buenos Aires” compuesta junto a Horacio Ferrer. Esta obra llevada al disco, fue el comienzo de una larga y fructífera unión. Piazzolla y Ferrer encuentran en ella la intérprete ideal y llega a estrenar más de 30 obras escritas por ellos marcando una época histórica de la música popular Argentina llegando a su culminación con “Balada para un loco”. <br>
+              Amelita se convierte en la musa, intérprete y cómplice de A. Piazzolla sucediéndose años intensos que los llevan a presentarse juntos en escenarios de América Latina. Radicados en París, sus presentaciones cambian continuamente de escenario; desde el Olympia parisino al Maracanazinho de Río de Janeiro. <br>
+              Separada de Piazzolla, Amelita continúa su exitosa carrera en Argentina y sus continuas giras la llevan a Holanda, Alemania, Bélgica, Francia, Suiza, Turquía, Chipre, Brasil, México, Uruguay, Chile, Estados Unidos. <br>
+              Hace teatro, telenovelas, Alejandro Agresti la llama desde Holanda para una participación en su película “Luba”. Graba varios álbumes que se editan en buena parte del mundo. <br>
+              Recibe numerosas distinciones, entre ellas la del MUDAN (Mujeres Destacadas en el Ámbito Nacional) en el Congreso de la Nación. En el honorable Concejo Deliberante es reconocida junto a Ferrer cuando se cumplen 30 años de la creación y estreno de “Balada para un loco”. También allí la distinguen como "personalidad destacada de la cultura". <br>
+              Junto al ballet contemporáneo Stagium recorre, en la década de 1990, gran parte del Brasil con el espectáculo “Tangamente” dedicado a Piazzola y a ella, llegando a teatros como el famosísimo “Amazonas” de Manaus y a los teatros municipales de Sâo Paulo y Río de Janeiro entre otras 20 salas. <br>
+              El Luna Park, décadas después de un estreno (1969) con algunos inconvenientes, la aplaude de pie al cantar “Balada para un loco” convocada por Julio Bocca quien la baila junto a ella durante 6 noches consecutivas. <br>
+              Durante los últimos años se presentó en varias ciudades de Suecia, en Finlandia, Holanda y España donde la aplaudieron de pie en Granada, Alicante, Marbella, Benalmádena, Madrid, Pamplona. Luego Baltar se presentó en el teatro “Cemal resit rey” Konser salonu de Estambul, ciudad que la recibe por tercera vez y donde la llaman “la diva del tango”. <br>
+              En 1995 recibió un Diploma al Mérito de los Premios Konex como una de las 5 mejores cantantes femeninas de tango de la década en Argentina, y en 2015, recibió el Konex de Platino en la misma actividad. <br>
+              Actualmente, Amelita Baltar prepara un álbum de tango electrónico en Argentina, con todas letras de su autoría, de pronta aparición.
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal para la biografía de García -->
+
+  <div class="modal fade modalContainer" id="carlosGarciaModal" tabindex="-1" aria-labelledby="GarciaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/carlosGarciaBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>Carlos Gardel</strong> fue un cantante, compositor y actor
+            de cine. Es el más conocido representante (del género) en la
+            historia del tango. Iniciador y máximo exponente del tango canción,​
+            fue uno de los intérpretes más importantes de la música popular
+            mundial en la primera mitad del siglo xx, por la calidad de su voz,
+            por la cantidad de discos vendidos (como cantante y como
+            compositor), por sus numerosas películas relacionadas con el tango y
+            por su repercusión mundial.​ <br />
+            No hay unanimidad sobre el lugar y la fecha de su nacimiento. La
+            hipótesis uruguayista sostiene que nació en Tacuarembó (Uruguay), un
+            11 de diciembre entre 1883 y 1887. La hipótesis francesista sostiene
+            que nació en Toulouse (Francia) el 11 de diciembre de 1890. Hay
+            unanimidad en el hecho de que vivió desde su infancia en Buenos
+            Aires y se nacionalizó argentino en 1923. Falleció el 24 de junio de
+            1935 en Medellín, Colombia, en un accidente aéreo. <br />
+            La persona y la imagen de Gardel han sido objeto de idolatría
+            popular, especialmente en Argentina y Uruguay, colocándolo en un
+            lugar de mito y símbolo cultural que aún mantiene su vigencia.​
+            <br />
+            En 2003 la voz de Gardel fue registrada por la Unesco en el programa
+            Memoria del Mundo, dedicado a la preservación de documentos
+            pertenecientes al patrimonio histórico de los pueblos del mundo. Al
+            mismo tiempo, se hace alusión a su voz y su recuerdo con la frase
+            "cada día, canta mejor".
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal para la biografía de Troilo -->
+
+  <div class="modal fade modalContainer" id="anibalTroiloModal" tabindex="-1" aria-labelledby="TroiloModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/anibalTroiloBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>Carlos Gardel</strong> fue un cantante, compositor y actor
+            de cine. Es el más conocido representante (del género) en la
+            historia del tango. Iniciador y máximo exponente del tango canción,​
+            fue uno de los intérpretes más importantes de la música popular
+            mundial en la primera mitad del siglo xx, por la calidad de su voz,
+            por la cantidad de discos vendidos (como cantante y como
+            compositor), por sus numerosas películas relacionadas con el tango y
+            por su repercusión mundial.​ <br />
+            No hay unanimidad sobre el lugar y la fecha de su nacimiento. La
+            hipótesis uruguayista sostiene que nació en Tacuarembó (Uruguay), un
+            11 de diciembre entre 1883 y 1887. La hipótesis francesista sostiene
+            que nació en Toulouse (Francia) el 11 de diciembre de 1890. Hay
+            unanimidad en el hecho de que vivió desde su infancia en Buenos
+            Aires y se nacionalizó argentino en 1923. Falleció el 24 de junio de
+            1935 en Medellín, Colombia, en un accidente aéreo. <br />
+            La persona y la imagen de Gardel han sido objeto de idolatría
+            popular, especialmente en Argentina y Uruguay, colocándolo en un
+            lugar de mito y símbolo cultural que aún mantiene su vigencia.​
+            <br />
+            En 2003 la voz de Gardel fue registrada por la Unesco en el programa
+            Memoria del Mundo, dedicado a la preservación de documentos
+            pertenecientes al patrimonio histórico de los pueblos del mundo. Al
+            mismo tiempo, se hace alusión a su voz y su recuerdo con la frase
+            "cada día, canta mejor".
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal para la biografía de TGoyeneche -->
+
+  <div class="modal fade modalContainer" id="robertoGoyenecheModal" tabindex="-1" aria-labelledby="GoyenecheModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/robertoGoyenecheBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>Carlos Gardel</strong> fue un cantante, compositor y actor
+            de cine. Es el más conocido representante (del género) en la
+            historia del tango. Iniciador y máximo exponente del tango canción,​
+            fue uno de los intérpretes más importantes de la música popular
+            mundial en la primera mitad del siglo xx, por la calidad de su voz,
+            por la cantidad de discos vendidos (como cantante y como
+            compositor), por sus numerosas películas relacionadas con el tango y
+            por su repercusión mundial.​ <br />
+            No hay unanimidad sobre el lugar y la fecha de su nacimiento. La
+            hipótesis uruguayista sostiene que nació en Tacuarembó (Uruguay), un
+            11 de diciembre entre 1883 y 1887. La hipótesis francesista sostiene
+            que nació en Toulouse (Francia) el 11 de diciembre de 1890. Hay
+            unanimidad en el hecho de que vivió desde su infancia en Buenos
+            Aires y se nacionalizó argentino en 1923. Falleció el 24 de junio de
+            1935 en Medellín, Colombia, en un accidente aéreo. <br />
+            La persona y la imagen de Gardel han sido objeto de idolatría
+            popular, especialmente en Argentina y Uruguay, colocándolo en un
+            lugar de mito y símbolo cultural que aún mantiene su vigencia.​
+            <br />
+            En 2003 la voz de Gardel fue registrada por la Unesco en el programa
+            Memoria del Mundo, dedicado a la preservación de documentos
+            pertenecientes al patrimonio histórico de los pueblos del mundo. Al
+            mismo tiempo, se hace alusión a su voz y su recuerdo con la frase
+            "cada día, canta mejor".
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Scripts -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/1d0f8105a2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+
+:root {
+    --bs-primary: #781313;
+    --bs-secondary: #1c1c1c;
+    --bs-primary-rgb: 104, 17, 17;
+    --bs-secondary-rgb: 28, 28, 28;
+}
+
+$commonPadding: 0 2em;
+$iconColor: black;
+$iconSize: 30pt;
+$iconsRedes: ("Facebook": #4267B2, "Instagram": #8935c1, "Spotify": #1DB954, "Twitter": #1DA1F2);
+$commonFontWeight: 400;
+$rgbWhite: rgba(255, 255, 255, 1);
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-secondary);
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbar-expand-md--rojoT {
+    background-color: var(--bs-primary);
+    width: 98vw;
+
+
+    .navbar__logoT {
+        padding: 0 1em;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-weight: $commonFontWeight * 2;
+        font-size: 2em;
+        flex-grow: 1;
+        animation: logoAnimado infinite 10s 0s;
+    }
+
+    .navbar__link {
+        font-size: 1.2em;
+        font-weight: $commonFontWeight / 2;
+        color: $rgbWhite !important;
+
+
+        &:hover {
+            font-weight: $commonFontWeight;
+        }
+
+    }
+
+    .navbar__link--tienda {
+        color: black !important;
+        font-weight: $commonFontWeight * 2;
+
+        &:hover {
+            color: $rgbWhite !important;
+
+        }
+
+
+    }
+
+}
+
+
+
+.grilla {
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 1fr 1fr auto auto auto;
+    grid-row-gap: 3em;
+    grid-column-gap: 1em;
+    justify-items: stretch;
+    grid-template-areas:
+        "header"
+        "biografias"
+        "noticiaG"
+        "noticiasC"
+        "spotify"
+        "footer";
+}
+
+header {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    grid-area: header;
+
+    .header__title {
+        position: absolute;
+        left: 0.4em;
+        bottom: 0em;
+        text-decoration: none;
+        color: white;
+        font-weight: $commonFontWeight * 2;
+        font-size: 5em;
+        z-index: 1;
+
+        p {
+            display: inline-block;
+        }
+
+        @for $i from 1 through 9 {
+            .p#{$i} {
+                color: rgba(255, 255, 255, 1/$i);
+
+            }
+        }
+    }
+
+
+    .header__video {
+        position: absolute;
+        left: -5em;
+        height: 100%;
+
+        align-content: center;
+
+        min-height: 100px;
+    }
+
+
+}
+
+.seccionesMain {
+    padding-left: 1em;
+    font-size: 2.5em;
+    font-weight: $commonFontWeight * 2;
+    text-transform: uppercase;
+    /* border-bottom: white solid 2px; */
+}
+
+.subtitulo {
+    padding: 0.5em 2em;
+}
+
+
+#containerBiografias {
+
+
+    grid-area: biografias;
+
+    .containerBiografias__containerCarousel {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+        .containerBiografias__containerItem {
+            width: 100%;
+            height: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            position: relative;
+
+            .containerBiografias__imgBio {
+                width: 100%;
+                height: 100%;
+
+                &:hover {
+                    opacity: 0.4;
+                    border: outset 2px white;
+                    cursor: pointer;
+                    //nofunciona :C
+                    // :not(&) {
+                    //     opacity: 0.7;
+                    // }
+                }
+
+                &:active {
+                    animation: flipOutY 1 1s;
+                }
+            }
+
+            .containerBiografias__texto {
+                position: absolute;
+                transform: rotate(-90deg);
+                text-align: right;
+                right: -1.8em;
+                bottom: 2.5em;
+                font-weight: $commonFontWeight;
+                font-size: 1.5em;
+                background-color: #1c1c1cb0;
+
+
+            }
+        }
+    }
+
+    .containerBiografias__icono {
+        font-size: 30pt;
+        opacity: 0.8;
+        height: 100%;
+        width: 40pt;
+        margin-left: 25pt;
+        margin-right: 25pt;
+
+
+    }
+
+}
+
+
+.icono {
+    font-size: $iconSize;
+    color: $iconColor;
+
+    //como calcular que siempre esté en el medio de la imagen
+
+}
+
+
+
+.containerNoticiaG {
+    font-size: 1em;
+    padding: $commonPadding;
+    grid-area: noticiaG;
+
+    .containerNoticiaG__img {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+
+
+aside {
+    height: 100%;
+    padding: $commonPadding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.8em;
+    grid-area: noticiasC;
+
+    //por qué la imagen determina el tamaño de las palabraS?
+    .aside__containerNoticiaC {
+        width: 100%;
+
+        .aside__img {
+            width: 100%;
+        }
+    }
+}
+
+.containerSpotify {
+    margin-top: 2em;
+    padding: $commonPadding;
+    grid-area: spotify;
+
+}
+
+footer {
+    background-color: var(--bs-primary);
+    padding: 1em 2em;
+    font-size: 0.8em;
+    grid-area: footer;
+
+    .footer__containerRedes {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 5em;
+
+        .footer__icono {
+            font-size: $iconSize;
+            color: $iconColor;
+            margin: 0 0.15em;
+
+        }
+
+        @each $name,
+        $colors in $iconsRedes {
+            .footer__icono#{$name}:hover {
+                color: $colors;
+            }
+
+        }
+    }
+
+}
+
+
+//Estilo de página error 404 not found
+.containerError {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .containerError__title {
+        font-size: 8em;
+        font-weight: $commonFontWeight * 2;
+
+    }
+
+    .containerError__button {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        color: $rgbWhite;
+    }
+
+}
+
+
+
+
+
+// Estilo de biografía
+
+.modal__header--bio {
+    display: flex;
+    flex-direction: column;
+
+
+    .modal__x {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .modal__img {
+        width: 100%;
+        display: block;
+        margin-top: 0.5em;
+
+
+        img {
+            width: 100%;
+            border-radius: 0.5em;
+        }
+    }
+}
+
+.modal__texto {
+    color: var(--bs-secondary);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+    .grilla {
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 0.6fr 1fr auto auto auto;
+        grid-template-areas:
+            "header header"
+            "biografias biografias"
+            "noticiaG noticiasC"
+            "spotify spotify"
+            "footer footer";
+    }
+
+    header {
+
+        h1 {
+            bottom: 0.5em;
+        }
+    }
+
+    .containerBiografias__containerCarousel {
+
+
+        .containerBiografias__containerItem {
+
+            .containerBiografias__texto {
+
+                font-weight: $commonFontWeight * 1.5 !important;
+                font-size: 2em;
+                z-index: -1;
+
+            }
+        }
+    }
+
+    .containerNoticiaG {
+        padding: 0 0 0 2em;
+    }
+
+    aside {
+        padding: 0 2em 0 0;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 950px) {
+
+    .navbar-expand-md--rojoT {
+        width: 99vw;
+    }
+
+    .navbar__logoT {
+        text-align: left;
+        padding-left: 2em;
+    }
+
+
+}
+
+@keyframes logoAnimado {
+    0% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.85);
+    }
+
+    90% {
+        transform: scale(1.15);
+    }
+}

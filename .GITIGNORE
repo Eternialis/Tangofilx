@@ -1,0 +1,9 @@
+*.rar
+
+*.json
+
+node_modules
+
+legado
+
+.vscode
