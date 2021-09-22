@@ -1,20 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import './variables';
+@import './canciones';
+@import './error404';
 
 
-:root {
-    --bs-primary: #781313;
-    --bs-secondary: #1c1c1c;
-    --bs-primary-rgb: 104, 17, 17;
-    --bs-secondary-rgb: 28, 28, 28;
-}
-
-$commonPadding: 0 2em;
-$iconColor: black;
-$iconSize: 30pt;
-$iconsRedes: ("Facebook": #4267B2, "Instagram": #8935c1, "Spotify": #1DB954, "Twitter": #1DA1F2);
-$commonFontWeight: 400;
-$rgbWhite: rgba(255, 255, 255, 1);
 
 body {
     margin: 0;
@@ -27,8 +17,10 @@ body {
 }
 
 .navbar-expand-md--rojoT {
+    position: fixed;
+    z-index: 150;
     background-color: var(--bs-primary);
-    width: 98vw;
+    width: 100vw;
 
 
     .navbar__logoT {
@@ -51,7 +43,6 @@ body {
         &:hover {
             font-weight: $commonFontWeight;
         }
-
     }
 
     .navbar__link--tienda {
@@ -64,6 +55,10 @@ body {
         }
 
 
+    }
+
+    .navbar__busqueda {
+        padding-right: 1em;
     }
 
 }
@@ -89,6 +84,7 @@ body {
 
 header {
     width: 100vw;
+
     position: relative;
     overflow: hidden;
     grid-area: header;
@@ -120,9 +116,7 @@ header {
         position: absolute;
         left: -5em;
         height: 100%;
-
         align-content: center;
-
         min-height: 100px;
     }
 
@@ -287,26 +281,6 @@ footer {
 }
 
 
-//Estilo de página error 404 not found
-.containerError {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .containerError__title {
-        font-size: 8em;
-        font-weight: $commonFontWeight * 2;
-
-    }
-
-    .containerError__button {
-        background-color: var(--bs-primary);
-        border-color: var(--bs-primary);
-        color: $rgbWhite;
-    }
-
-}
 
 
 
@@ -393,9 +367,6 @@ footer {
 
 @media only screen and (min-width: 950px) {
 
-    .navbar-expand-md--rojoT {
-        width: 99vw;
-    }
 
     .navbar__logoT {
         text-align: left;

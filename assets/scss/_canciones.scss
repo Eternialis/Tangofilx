@@ -1,0 +1,87 @@
+@import 'variables.scss';
+
+
+.lyrics__title {
+    padding-top: 1em;
+    font-weight: $commonFontWeight * 2;
+    font-size: 5em;
+    text-align: center;
+}
+
+.table {
+
+
+    .nav-link--lyrics {
+
+        color: $rgbWhite;
+    }
+}
+
+.lyrics__container {
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .tab-content--lyrics {
+        width: 100%;
+        padding-right: 20px;
+
+        .container__video {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 5em;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+
+    .container__autorxs {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 940px;
+
+
+        .container__card {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+            img {
+                height: 400px;
+                width: 286px;
+                object-fit: cover;
+                object-position: 0% 20%;
+            }
+
+            .card__text {
+                // no me funcionan las variables
+                background-color: #1c1c1c;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .lyrics__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .container__autorxs {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+    }
+}

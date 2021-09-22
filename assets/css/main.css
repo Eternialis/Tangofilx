@@ -5,6 +5,74 @@
   --bs-primary-rgb: 104, 17, 17;
   --bs-secondary-rgb: 28, 28, 28; }
 
+:root {
+  --bs-primary: #781313;
+  --bs-secondary: #1c1c1c;
+  --bs-primary-rgb: 104, 17, 17;
+  --bs-secondary-rgb: 28, 28, 28; }
+
+.lyrics__title {
+  padding-top: 1em;
+  font-weight: 800;
+  font-size: 5em;
+  text-align: center; }
+
+.table .nav-link--lyrics {
+  color: white; }
+
+.lyrics__container {
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .lyrics__container .tab-content--lyrics {
+    width: 100%;
+    padding-right: 20px; }
+    .lyrics__container .tab-content--lyrics .container__video {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 5em; }
+      .lyrics__container .tab-content--lyrics .container__video iframe {
+        width: 100%;
+        height: 100%; }
+  .lyrics__container .container__autorxs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 940px; }
+    .lyrics__container .container__autorxs .container__card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5); }
+      .lyrics__container .container__autorxs .container__card img {
+        height: 400px;
+        width: 286px;
+        object-fit: cover;
+        object-position: 0% 20%; }
+      .lyrics__container .container__autorxs .container__card .card__text {
+        background-color: #1c1c1c; }
+
+@media only screen and (min-width: 768px) {
+  .lyrics__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .container__autorxs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw; } }
+
+.containerError {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .containerError .containerError__title {
+    font-size: 8em;
+    font-weight: 800; }
+  .containerError .containerError__button {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white; }
+
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +83,10 @@ body {
   font-family: "Roboto Condensed", sans-serif; }
 
 .navbar-expand-md--rojoT {
+  position: fixed;
+  z-index: 150;
   background-color: var(--bs-primary);
-  width: 98vw; }
+  width: 100vw; }
   .navbar-expand-md--rojoT .navbar__logoT {
     padding: 0 1em;
     text-decoration: none;
@@ -37,6 +107,8 @@ body {
     font-weight: 800; }
     .navbar-expand-md--rojoT .navbar__link--tienda:hover {
       color: white !important; }
+  .navbar-expand-md--rojoT .navbar__busqueda {
+    padding-right: 1em; }
 
 .grilla {
   width: 98vw;
@@ -190,18 +262,6 @@ footer {
     footer .footer__containerRedes .footer__iconoTwitter:hover {
       color: #1DA1F2; }
 
-.containerError {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .containerError .containerError__title {
-    font-size: 8em;
-    font-weight: 800; }
-  .containerError .containerError__button {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-primary);
-    color: white; }
-
 .modal__header--bio {
   display: flex;
   flex-direction: column; }
@@ -237,8 +297,6 @@ footer {
     padding: 0 2em 0 0; } }
 
 @media only screen and (min-width: 950px) {
-  .navbar-expand-md--rojoT {
-    width: 99vw; }
   .navbar__logoT {
     text-align: left;
     padding-left: 2em; } }
