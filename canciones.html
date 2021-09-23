@@ -38,8 +38,8 @@
           <li class="nav-item">
             <a class="nav-link navbar__link" aria-current="page" href="./index.html#contacto">Contacto</a>
           </li>
-          <li class="nav-item navbar__link">
-            <a class="nav-link navbar__link--tienda" aria-current="page" href="./store.html">Tienda</a>
+          <li class="nav-item">
+            <a class="nav-link navbar__link navbar__link--tienda" aria-current="page" href="./store.html">Tienda</a>
           </li>       
         </ul>
 
@@ -51,25 +51,28 @@
   </nav>
 
   <h1 class="lyrics__title">Caminito</h1>
+  <h2 class="lyrics__subtitle">Tango - 1926</h2>
 
+
+  <!-- Pestañas  -->
   <ul class="nav nav-tabs table" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active nav-link--lyrics" id="home-tab" data-bs-toggle="tab" data-bs-target="#letra" type="button" role="tab" aria-controls="home" aria-selected="true">Letra</button>
+      <button class="nav-link active nav-link--lyrics" id="letra-tab" data-bs-toggle="tab" data-bs-target="#letra" type="button" role="tab" aria-controls="letra" aria-selected="true">Letra</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link--lyrics" id="profile-tab" data-bs-toggle="tab" data-bs-target="#musica" type="button" role="tab" aria-controls="profile" aria-selected="false">Música</button>
+      <button class="nav-link nav-link--lyrics" id="versiones-tab" data-bs-toggle="tab" data-bs-target="#versiones" type="button" role="tab" aria-controls="versiones" aria-selected="false">Versiones</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link--lyrics" id="contact-tab" data-bs-toggle="tab" data-bs-target="#historia" type="button" role="tab" aria-controls="contact" aria-selected="false">Historia</button>
+      <button class="nav-link nav-link--lyrics" id="historia-tab" data-bs-toggle="tab" data-bs-target="#historia" type="button" role="tab" aria-controls="historia" aria-selected="false">Historia</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link nav-link--lyrics" id="contact-tab" data-bs-toggle="tab" data-bs-target="#interpretaciones" type="button" role="tab" aria-controls="contact" aria-selected="false">Interpretaciones</button>
+      <button class="nav-link nav-link--lyrics" id="interpretaciones-tab" data-bs-toggle="tab" data-bs-target="#interpretaciones" type="button" role="tab" aria-controls="interpretaciones" aria-selected="false">Interpretaciones</button>
     </li>
   </ul>
 <div class="lyrics__container">
   
     <div class="tab-content tab-content--lyrics" id="myTabContent">
-      <div class="tab-pane fade show active container__item" id="letra" role="tabpanel" aria-labelledby="letra-tab">
+      <div class="tab-pane fade show active container__item" id="letra" role="tabpanel" aria-labelledby="letra">
           <p>
             Caminito que el tiempo ha borrado<br>
             Que juntos un día nos viste pasar<br>
@@ -119,41 +122,243 @@
             Caminito, adiós
           </p>
       </div>
-      <div class="tab-pane fade container__video" id="musica" role="tabpanel" aria-labelledby="musica-tab">
+      <div class="tab-pane fade container__video" id="versiones" role="tabpanel" aria-labelledby="versiones">
         <h2>Carlos Gardel</h2>
         <iframe src="https://www.youtube-nocookie.com/embed/aOaLH2TVMUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Libertad Lamarque</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/JP-RgBnzv4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="tab-pane fade container__item" id="historia" role="tabpanel" aria-labelledby="historia-tab">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quos consequatur qui, dolores cum fuga quam voluptatem ipsa eum
-           consectetur non adipisci? Harum, quos, optio explicabo voluptate corrupti dolor quod error minima nam odit, dicta totam aut sunt
-            accusantium. Inventore deserunt doloremque, labore, facere ab natus sint minima cum hic, maxime necessitatibus accusantium culpa est doloribus obcaecati. Natus, quidem tempore!</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi incidunt tenetur fuga corporis eos molestias quisquam, unde cumque 
-          adipisci dolores quasi, aliquid quam veritatis at consectetur impedit alias temporibus eius repellat eaque iusto voluptate sint. Magnam, 
-          aspernatur. Nostrum, provident voluptas numquam eligendi deserunt alias perspiciatis dignissimos quibusdam minus dolores consequatur.
-           Quos minus dolore sunt alias autem aspernatur in adipisci eaque praesentium debitis. Adipisci rerum nemo excepturi. Iure sed repellendus
-            accusamus dolorum veniam similique quas, sunt debitis nam molestiae illo veritatis aspernatur quam incidunt neque laudantium aut autem 
-            qui assumenda cupiditate. Earum neque culpa temporibus cupiditate assumenda! Ex, nihil. Incidunt corporis sit tenetur a doloremque! Voluptate, 
-            voluptatum, magni maxime explicabo inventore enim quae suscipit nesciunt non minima ipsa earum voluptatem necessitatibus molestiae, ad ipsam totam accusamus.
-             Perferendis praesentium labore reiciendis iure quo qui, iusto distinctio ex. Fugiat, nihil voluptas! Non nisi rem veritatis quam consequuntur odio impedit atque laudantium ipsam eligendi.</p>
+      <div class="tab-pane fade container__item" id="historia" role="tabpanel" aria-labelledby="historia">
+       <img src="./assets/img/caminitoOlta.jpg" alt="Caminito de Olta">
+        <p>
+          «Caminito» es una canción de tango compuesta en 1926 por los argentinos <strong>Juan de Dios Filiberto</strong> (música) y <strong>Gabino Coria Peñaloza</strong> (letra). <br>
+           Fue grabada inicialmente por Carlos Gardel pero logró el éxito con una interpretación de Ignacio Corsini. <br>
+          La letra de la canción -anterior a la música- está inspirada en el Caminito de Olta, en la provincia de La Rioja,
+           parte de un antiguo sendero rural que llevaba desde la localidad hasta el pueblo cercano de Loma Blanca. La música, 
+           por su parte, está inspirada en el «Caminito» del barrio de La Boca en Buenos Aires.
+        </p>
+          
+        <p>
+            La calle fue rebautizada y rediseñada como el actual Caminito, con objetivos turísticos, en 1950.
+            La letra del tango se refiere realmente a un camino rural de la localidad de Olta, en el actual departamento General Belgrano,
+            en la provincia de La Rioja. Está considerado el tercer tango más famoso en todo el mundo, luego de La cumparsita y El choclo.
+           ​ Ha sido interpretado por artistas de muy diversos estilos y países, destacándose la versión realizada por Los Tres Tenores.
+        </p>
+           <h2>Letra</h2>
+        <p>
+            La letra del tango fue escrita en 1903, 23 años antes de que se compusiera la canción, por Gabino Coria Peñaloza (1881-1975), 
+            un puntano radicado en la localidad riojana de Chilecito. <br>
+            Posee una estructura clásica de dos partes, cada una integrada por dos estrofas, y un estribillo. En el poema, el poeta le habla al caminito,
+            como confidente y como testigo silencioso de su soledad y su tristeza («he venido a contarte mi mal»). El caminito es el lugar al que el autor va 
+            a recordar a un gran amor perdido, con quien solía caminar por allí. Sin embargo, según la letra, es la última vez que el poeta irá al caminito («he venido por última vez»).
+            El sentido de la letra puede interpretarse como una intención del poeta de matarse («yo también me voy»; «que el tiempo nos mate a los dos»), pero también como una decisión 
+            de marcharse también él, para seguir con su vida, a pesar del dolor de haberla perdido:
+        </p>
+            
+        <p class="container__cita">
+            Desde que se fue <br>
+            triste vivo yo, <br>
+            caminito amigo, <br>
+            yo también me voy. <br>
+        </p>
+
+        <p>
+              En una figura de la tercera estrofa, el poeta pone en evidencia que el caminito no solo es un lugar de recuerdo de ella,
+            sino una posible conexión entre ambos amantes, ante la posibilidad de que ella también pudiera volver a pasar. Como si fuera un
+            amigo que continúa viendo a ambos amantes luego de separados, el poeta le pide que no le diga que llora por ella:
+        </p>
+
+        <p class="container__cita">
+            ...no le digas si vuelve a pasar <br>
+            que mi llanto tu suelo regó.
+        </p>
+
+        <p>
+            El poema reflexiona también sobre el paso del tiempo, tema recurrente en el tango. El poeta se identifica con el caminito: cuando él era feliz con su amada,
+            el caminito era un bello sendero «bordado de trébol y juncos en flor»; ahora, cuando él la ha perdido y el tiempo ha pasado, el caminito está «cubierto de cardos»
+            y borrado por «la mano del tiempo».
+        </p>
+
+            <p>
+              Finalmente, el poeta se despide del caminito. Toda la canción es una despedida. El autor le dice al caminito que siente que «quisiera caer» a su lado,
+              pero que, al mismo tiempo, ha tomado la decisión de dejar de venir al caminito, para seguir los pasos de ella, no en el sentido de seguirla a ella, sino de irse de allí.
+            </p>
+
+            <p class="container__cita">
+              Seguiré sus pasos... <br>
+              Caminito, adiós.
+            </p>
+            <h3>Música</h3>
+            <p>
+              La música fue compuesta por Juan de Dios Filiberto. Sus primeros compases fueron gestados en 1923, para completarla en 1926. Filiberto la inscribió
+              como «canción porteña», para diferenciarla del tango clásico. La música de «Caminito» «participa del carácter de vidalita y de cierta música pampeana»,
+               influencias folklóricas que son características del estilo de Filiberto.
+            </p>
+
+            <p>
+              Cada estrofa comienza en fa menor, que sube a fa mayor en el estribillo, reforzando el tono melancólico. Se ha señalado que el atractivo de la música de
+               «Caminito» radica precisamente en el aire melancólico que le otorga la melodía, así como en la simpleza y sencillez de su estructura, «uno de los tangos de menor cantidad de notas y compases».
+            </p>
+
       </div>
-      <div class="tab-pane fade container__item" id="interpretaciones" role="tabpanel" aria-labelledby="interpretaciones-tab">...</div>
+      <div class="tab-pane fade container__item" id="interpretaciones" role="tabpanel" aria-labelledby="interpretaciones">
+        
+        <p class="item__card">
+          Canta Carlos Gardel Guitarras de Barbieri y Ricardo<br>
+          20-7-1927 Buenos Aires Odeon 18219 1109
+        </p>
+        <p class="item__card">    
+        Canta Instrumental / Orquesta Alfredo De Angelis<br>
+        23-6-1955 Buenos Aires Odeon 51798-A 20263
+      </p>
+        <p class="item__card">  
+          Canta Instrumental / Orquesta José Basso<br>
+          28-4-1961 Buenos Aires Odeon LDS-818 26271
+        </p>
+        <p class="item__card">
+          Canta María de la Fuente / Orquesta Juan Canaro<br>
+          4-10-1954 Tokio Melopea CDMSE 5108
+        </p>
+        <p class="item__card">
+          Canta Instrumental / Orquesta Leopoldo Federico<br>
+          14-7-1996 Tokio
+        </p>
+        <p class="item__card">
+          Canta Juan Carlos Fabri / Orquesta Miguel Caló<br>
+          27-11-1951 Buenos Aires Odeon 55340 18279
+        </p>
+        <p class="item__card">
+          Canta Ranko Fujisawa / Orquesta Miguel Caló<br>
+          17-3-1964 Buenos Aires Odeon 29833
+        </p>
+        <p class="item__card">
+          Canta Oscar Serpa / Orquesta Carlos Di Sarli<br>
+          1952 Buenos Aires Music Hall 1026-B BA 1049
+        </p>
+        <p class="item__card">
+          Canta Lucho Gatica / Orquesta Miguel Caló<br>
+          1965 Chile Odeon LDM-8166
+        </p>
+        <p class="item__card">
+          Canta Jorge Maciel / Orquesta Osvaldo Pugliese<br>
+          1966 Buenos Aires Philips 82169 07.1967
+        </p>
+        <p class="item__card">
+          Canta Enzo Valentino / Orquesta Roberto Pansera<br>
+          1968 Buenos Aires Alanicky 6085509
+        </p>
+        <p class="item__card">
+          Canta Instrumental / Orquesta José Basso<br>
+          1970 Buenos Aires Almalí 30007
+        </p>
+        <p class="item__card">
+          Canta Rosanna Falasca / Orquesta Lito Escarso<br>
+          1982 Buenos Aires Polydor
+        </p>
+        <p class="item__card">
+          Canta Enzo Valentino / Orquesta Jorge Dragone<br>
+          1995 Buenos Aires EMI 854008-2 (CD)
+        </p>
+        <p class="item__card">
+          Canta Nelly Omar Con guitarras<br>
+          12-11-1997 Buenos Aires Magenta 512.510
+        </p>
+      </div>
     </div>
     <div class="container__autorxs">
-      <div class="card container__card" style="width: 18rem;">
-        <img src="./assets/img/imgBio/astorPiazzollaBio.jpg" class="card-img-top" alt="Astor Piazzolla">
+      <div class="card container__card" style="width: 18rem;"  data-bs-toggle="modal" data-bs-target="#gabinoPeñalozaModal">
+        <img src="./assets/img/imgBio/gabinoCoriaPeñalozaBio.jpg" class="card-img-top" alt="Gabino Coria Peñaloza">
         <div class="card-body card__text">
-          <p class="card-text">Astor Piazzolla</p>
+          <p class="card-text">Letra: Gabino Coria Peñaloza</p>
         </div>
       </div>
-      <div class="card container__card" style="width: 18rem;">
-        <img src="./assets/img/imgBio/carlosGarciaBio.jpg" class="card-img-top" alt="Horacio Ferrer">
+      <div class="card container__card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#juanFilibertoModal">
+        <img src="./assets/img/imgBio/juandeDiosFilibertoBio.jpg" class="card-img-top" alt="Juan de Dios Filiberto">
         <div class="card-body card__text">
-          <p class="card-text">Horacio Ferrer</p>
+          <p class="card-text">Música: Juan de Dios Filiberto</p>
         </div>
       </div>
     </div>
 </div>
 
+
+
+  
+  <!-- Modal para la biografía de Gabino Coria Peñaloza -->
+
+  <div class="modal fade modalContainer" id="gabinoPeñalozaModal" tabindex="-1" aria-labelledby="PeñalozaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/carlosGardelBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>Carlos Gardel</strong> fue un cantante, compositor y actor
+            de cine. Es el más conocido representante (del género) en la
+            historia del tango. Iniciador y máximo exponente del tango canción,​
+            fue uno de los intérpretes más importantes de la música popular
+            mundial en la primera mitad del siglo xx, por la calidad de su voz,
+            por la cantidad de discos vendidos (como cantante y como
+            compositor), por sus numerosas películas relacionadas con el tango y
+            por su repercusión mundial.​ <br />
+            No hay unanimidad sobre el lugar y la fecha de su nacimiento. La
+            hipótesis uruguayista sostiene que nació en Tacuarembó (Uruguay), un
+            11 de diciembre entre 1883 y 1887. La hipótesis francesista sostiene
+            que nació en Toulouse (Francia) el 11 de diciembre de 1890. Hay
+            unanimidad en el hecho de que vivió desde su infancia en Buenos
+            Aires y se nacionalizó argentino en 1923. Falleció el 24 de junio de
+            1935 en Medellín, Colombia, en un accidente aéreo. <br />
+            La persona y la imagen de Gardel han sido objeto de idolatría
+            popular, especialmente en Argentina y Uruguay, colocándolo en un
+            lugar de mito y símbolo cultural que aún mantiene su vigencia.​
+            <br />
+            En 2003 la voz de Gardel fue registrada por la Unesco en el programa
+            Memoria del Mundo, dedicado a la preservación de documentos
+            pertenecientes al patrimonio histórico de los pueblos del mundo. Al
+            mismo tiempo, se hace alusión a su voz y su recuerdo con la frase
+            "cada día, canta mejor".
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal para la biografía de Juan de Dios Filiberto -->
+
+  <div class="modal fade modalContainer" id="juanFilibertoModal" tabindex="-1" aria-labelledby="FilibertoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal__header--bio">
+          <div class="modal__x"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          <div class="modal-title modal__img"><img src="./assets/img/imgBio/headerBio/amelitaBaltarBg.jpg" alt=""></div>
+        </div>
+        <div class="modal-body modal__texto">
+          <p>
+            <strong>María Amelia Baltar</strong>, conocida como Amelita Baltar, (Buenos Aires, 24 de septiembre de 1940) es una cantante argentina.
+            Desde sus comienzos como cantante folklórica, Amelita Baltar se destacó por su voz y el talento dramático que se manifiesta en sus interpretaciones. Su primer disco como solista en 1968, la lleva a obtener el premio revelación en el “Festival nacional del disco” realizado en Mar del Plata. <br>
+
+              En ese mismo año es escuchada por Astor Piazzolla quien la invita a protagonizar su operita “María de Buenos Aires” compuesta junto a Horacio Ferrer. Esta obra llevada al disco, fue el comienzo de una larga y fructífera unión. Piazzolla y Ferrer encuentran en ella la intérprete ideal y llega a estrenar más de 30 obras escritas por ellos marcando una época histórica de la música popular Argentina llegando a su culminación con “Balada para un loco”. <br>
+              Amelita se convierte en la musa, intérprete y cómplice de A. Piazzolla sucediéndose años intensos que los llevan a presentarse juntos en escenarios de América Latina. Radicados en París, sus presentaciones cambian continuamente de escenario; desde el Olympia parisino al Maracanazinho de Río de Janeiro. <br>
+              Separada de Piazzolla, Amelita continúa su exitosa carrera en Argentina y sus continuas giras la llevan a Holanda, Alemania, Bélgica, Francia, Suiza, Turquía, Chipre, Brasil, México, Uruguay, Chile, Estados Unidos. <br>
+              Hace teatro, telenovelas, Alejandro Agresti la llama desde Holanda para una participación en su película “Luba”. Graba varios álbumes que se editan en buena parte del mundo. <br>
+              Recibe numerosas distinciones, entre ellas la del MUDAN (Mujeres Destacadas en el Ámbito Nacional) en el Congreso de la Nación. En el honorable Concejo Deliberante es reconocida junto a Ferrer cuando se cumplen 30 años de la creación y estreno de “Balada para un loco”. También allí la distinguen como "personalidad destacada de la cultura". <br>
+              Junto al ballet contemporáneo Stagium recorre, en la década de 1990, gran parte del Brasil con el espectáculo “Tangamente” dedicado a Piazzola y a ella, llegando a teatros como el famosísimo “Amazonas” de Manaus y a los teatros municipales de Sâo Paulo y Río de Janeiro entre otras 20 salas. <br>
+              El Luna Park, décadas después de un estreno (1969) con algunos inconvenientes, la aplaude de pie al cantar “Balada para un loco” convocada por Julio Bocca quien la baila junto a ella durante 6 noches consecutivas. <br>
+              Durante los últimos años se presentó en varias ciudades de Suecia, en Finlandia, Holanda y España donde la aplaudieron de pie en Granada, Alicante, Marbella, Benalmádena, Madrid, Pamplona. Luego Baltar se presentó en el teatro “Cemal resit rey” Konser salonu de Estambul, ciudad que la recibe por tercera vez y donde la llaman “la diva del tango”. <br>
+              En 1995 recibió un Diploma al Mérito de los Premios Konex como una de las 5 mejores cantantes femeninas de tango de la década en Argentina, y en 2015, recibió el Konex de Platino en la misma actividad. <br>
+              Actualmente, Amelita Baltar prepara un álbum de tango electrónico en Argentina, con todas letras de su autoría, de pronta aparición.
+          </p>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+    </div>
+  </div>
 
       <!-- Scripts -->
 

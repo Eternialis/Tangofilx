@@ -8,12 +8,19 @@
     text-align: center;
 }
 
+.lyrics__subtitle {
+    font-weight: $commonFontWeight / 2;
+    text-align: center;
+}
+
 .table {
 
 
     .nav-link--lyrics {
 
         color: $rgbWhite;
+        font-size: 1.5em;
+        font-weight: $commonFontWeight;
     }
 }
 
@@ -24,22 +31,54 @@
     align-items: center;
 
 
+
     .tab-content--lyrics {
         width: 100%;
         padding-right: 20px;
 
+
+        .container__item {
+            text-align: justify;
+            animation: fadeInLeft 1 1s;
+
+            .container__cita {
+                text-align: center;
+                font-style: italic;
+            }
+
+            .item__card {
+                background-color: var(--bs-primary);
+                //background-color: #074C78; (posible color secundario)
+                width: fit-content;
+                text-align: center;
+                padding: 0.5em 1em;
+                border-radius: 0.5em;
+                border: solid 2px #000000;
+                box-shadow: $boxshadow;
+            }
+
+            img {
+                width: 241px;
+                height: auto;
+                float: left;
+                margin-right: 1em;
+                padding-top: 0.5em;
+            }
+        }
+
         .container__video {
-            width: 100%;
-            height: 400px;
+            max-width: 100%;
             margin-bottom: 5em;
+            animation: fadeInUp 1 1s;
 
             iframe {
                 width: 100%;
-                height: 100%;
+                height: 400px;
             }
         }
 
     }
+
 
 
     .container__autorxs {
@@ -48,25 +87,43 @@
         flex-direction: column;
         justify-content: space-between;
         height: 940px;
+        padding-left: 20px;
+
 
 
         .container__card {
 
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: $boxshadow;
+            //No me toma el cursor pointer
+            cursor: pointer;
+            animation: slideInRight 1 1s;
 
             img {
                 height: 400px;
                 width: 286px;
                 object-fit: cover;
                 object-position: 0% 20%;
+
             }
 
             .card__text {
                 // no me funcionan las variables
-                background-color: #1c1c1c;
+                background-color: var(--bs-secondary);
             }
         }
     }
+
+}
+
+
+
+@media only screen and (min-width: 1350px) {
+
+
+    .lyrics__container {
+        padding: 3em 15vw;
+    }
+
 
 }
 
@@ -75,7 +132,7 @@
 
     .lyrics__container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
     }
 

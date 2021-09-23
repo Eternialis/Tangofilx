@@ -46,11 +46,17 @@ body {
     }
 
     .navbar__link--tienda {
-        color: black !important;
+        color: $rgbWhite !important;
+        background-color: var(--bs-primary);
+        border: solid 2px $rgbWhite;
+        border-radius: 0.5em;
         font-weight: $commonFontWeight * 2;
+        padding: 0.35em 0.5em;
 
         &:hover {
-            color: $rgbWhite !important;
+            color: var(--bs-primary) !important;
+            background-color: $rgbWhite;
+            font-weight: $commonFontWeight * 2;
 
         }
 
