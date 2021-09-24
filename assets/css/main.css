@@ -290,15 +290,14 @@ footer {
     padding: 0 5em; }
     footer .footer__containerRedes .footer__icono {
       font-size: 30pt;
-      color: black;
       margin: 0 0.15em; }
-    footer .footer__containerRedes .footer__iconoFacebook:hover {
+    footer .footer__containerRedes .footer__iconoFacebook {
       color: #4267B2; }
-    footer .footer__containerRedes .footer__iconoInstagram:hover {
+    footer .footer__containerRedes .footer__iconoInstagram {
       color: #8935c1; }
-    footer .footer__containerRedes .footer__iconoSpotify:hover {
+    footer .footer__containerRedes .footer__iconoSpotify {
       color: #1DB954; }
-    footer .footer__containerRedes .footer__iconoTwitter:hover {
+    footer .footer__containerRedes .footer__iconoTwitter {
       color: #1DA1F2; }
 
 .modal__header--bio {
@@ -333,7 +332,23 @@ footer {
   .containerNoticiaG {
     padding: 0 0 0 2em; }
   aside {
-    padding: 0 2em 0 0; } }
+    padding: 0 2em 0 0; }
+  .footer__iconoFacebook {
+    color: black !important; }
+  .footer__iconoInstagram {
+    color: black !important; }
+  .footer__iconoSpotify {
+    color: black !important; }
+  .footer__iconoTwitter {
+    color: black !important; }
+  .footer__iconoFacebook:hover {
+    color: #4267B2 !important; }
+  .footer__iconoInstagram:hover {
+    color: #8935c1 !important; }
+  .footer__iconoSpotify:hover {
+    color: #1DB954 !important; }
+  .footer__iconoTwitter:hover {
+    color: #1DA1F2 !important; } }
 
 @media only screen and (min-width: 950px) {
   .navbar__logoT {

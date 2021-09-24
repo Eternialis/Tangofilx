@@ -270,14 +270,13 @@ footer {
 
         .footer__icono {
             font-size: $iconSize;
-            color: $iconColor;
             margin: 0 0.15em;
 
         }
 
         @each $name,
         $colors in $iconsRedes {
-            .footer__icono#{$name}:hover {
+            .footer__icono#{$name} {
                 color: $colors;
             }
 
@@ -365,6 +364,22 @@ footer {
 
     aside {
         padding: 0 2em 0 0;
+
+    }
+
+    @each $name,
+    $colors in $iconsRedes {
+        .footer__icono#{$name} {
+            color: $iconColor !important;
+        }
+
+    }
+
+    @each $name,
+    $colors in $iconsRedes {
+        .footer__icono#{$name}:hover {
+            color: $colors !important;
+        }
 
     }
 
