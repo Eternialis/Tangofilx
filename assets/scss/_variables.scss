@@ -3,13 +3,25 @@
     --bs-secondary: #1c1c1c;
     --bs-primary-rgb: 104, 17, 17;
     --bs-secondary-rgb: 28, 28, 28;
+    --bs-title: #0C7EC4;
+    --bs-title-rgb: 12, 126, 196;
 }
 
 $commonPadding: 0 2em;
-$iconColor: black;
+$iconColor: rgba(255, 255, 255, 1);
 $iconSize: 30pt;
 $iconsRedes: ("Facebook": #4267B2, "Instagram": #8935c1, "Spotify": #1DB954, "Twitter": #1DA1F2);
 $commonFontWeight: 400;
 $rgbWhite: rgba(255, 255, 255, 1);
+$rgbHoverWhite: rgba(255, 255, 255, 0.65);
 $boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+@mixin linkNoticia {
+    text-decoration: none;
+    color: $rgbWhite;
+
+    &:hover {
+        color: $rgbHoverWhite;
+    }
+}

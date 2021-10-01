@@ -3,23 +3,28 @@
   --bs-primary: #781313;
   --bs-secondary: #1c1c1c;
   --bs-primary-rgb: 104, 17, 17;
-  --bs-secondary-rgb: 28, 28, 28; }
+  --bs-secondary-rgb: 28, 28, 28;
+  --bs-title: #0C7EC4;
+  --bs-title-rgb: 12, 126, 196; }
 
 :root {
   --bs-primary: #781313;
   --bs-secondary: #1c1c1c;
   --bs-primary-rgb: 104, 17, 17;
-  --bs-secondary-rgb: 28, 28, 28; }
+  --bs-secondary-rgb: 28, 28, 28;
+  --bs-title: #0C7EC4;
+  --bs-title-rgb: 12, 126, 196; }
 
 .lyrics__title {
-  padding-top: 1em;
+  padding: 1em 0.5em 0 0.5em;
   font-weight: 800;
   font-size: 5em;
   text-align: center; }
 
 .lyrics__subtitle {
   font-weight: 200;
-  text-align: center; }
+  text-align: center;
+  margin: 0 1em; }
 
 .table .nav-link--lyrics {
   color: white;
@@ -34,50 +39,89 @@
   .lyrics__container .tab-content--lyrics {
     width: 100%;
     padding-right: 20px; }
-    .lyrics__container .tab-content--lyrics .container__item {
-      text-align: justify;
-      animation: fadeInLeft 1 1s; }
-      .lyrics__container .tab-content--lyrics .container__item .container__cita {
-        text-align: center;
-        font-style: italic; }
-      .lyrics__container .tab-content--lyrics .container__item .item__card {
-        background-color: var(--bs-primary);
-        width: fit-content;
-        text-align: center;
-        padding: 0.5em 1em;
-        border-radius: 0.5em;
-        border: solid 2px #000000;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5); }
-      .lyrics__container .tab-content--lyrics .container__item img {
-        width: 241px;
-        height: auto;
-        float: left;
-        margin-right: 1em;
-        padding-top: 0.5em; }
-    .lyrics__container .tab-content--lyrics .container__video {
-      max-width: 100%;
-      margin-bottom: 5em;
-      animation: fadeInUp 1 1s; }
-      .lyrics__container .tab-content--lyrics .container__video iframe {
-        width: 100%;
-        height: 400px; }
-  .lyrics__container .container__autorxs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 940px;
-    padding-left: 20px; }
-    .lyrics__container .container__autorxs .container__card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      animation: slideInRight 1 1s; }
-      .lyrics__container .container__autorxs .container__card img {
-        height: 400px;
-        width: 286px;
-        object-fit: cover;
-        object-position: 0% 20%; }
-      .lyrics__container .container__autorxs .container__card .card__text {
-        background-color: var(--bs-secondary); }
+
+.container__item {
+  animation: fadeInLeft 1 1s; }
+  .container__item p {
+    text-align: justify; }
+  .container__item .container__firma {
+    text-indent: 0;
+    font-style: italic;
+    opacity: 0.7; }
+  .container__item .container__pieImagen {
+    text-indent: 0;
+    font-size: 0.8em;
+    font-style: italic; }
+  .container__item .container__cita {
+    text-align: center;
+    font-style: italic; }
+  .container__item .container__cita--poema {
+    line-height: 2; }
+  .container__item .item__card {
+    background-color: var(--bs-primary);
+    width: fit-content;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: solid 2px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5); }
+  .container__item .container__img {
+    width: 241px;
+    height: auto;
+    float: left;
+    margin-right: 1em;
+    padding-top: 0.5em; }
+  .container__item .container__bigImg {
+    width: 100%;
+    height: auto; }
+
+.container__item--parrafo {
+  text-indent: 40px; }
+
+.container__video {
+  max-width: 100%;
+  margin-bottom: 5em;
+  animation: fadeInUp 1 1s; }
+  .container__video iframe {
+    width: 100%;
+    height: 400px; }
+
+.container__autorxs {
+  display: flex;
+  flex-direction: column;
+  height: 940px;
+  padding-left: 20px;
+  animation: slideInRight 1 1s; }
+  .container__autorxs .container__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-bottom: 1em; }
+    .container__autorxs .container__card img {
+      height: 400px;
+      width: 286px;
+      object-fit: cover;
+      object-position: 0% 20%; }
+    .container__autorxs .container__card .card__text {
+      background-color: var(--bs-secondary); }
+
+.container__social {
+  display: none;
+  flex-direction: column; }
+  .container__social .container__shareIcon {
+    color: var(--bs-secondary);
+    font-size: 2em;
+    padding: 0.3em;
+    margin-bottom: 0.3em;
+    background-color: white;
+    border-radius: 1em; }
+
+.container__social--mobile {
+  display: flex;
+  flex-direction: row;
+  text-indent: 0; }
+  .container__social--mobile .container__shareIcon {
+    padding: 0.3em;
+    margin-right: 0.3em; }
 
 @media only screen and (min-width: 1350px) {
   .lyrics__container {
@@ -91,7 +135,12 @@
   .container__autorxs {
     display: flex;
     flex-direction: column;
-    margin-right: 10vw; } }
+    margin-right: 10vw;
+    margin-left: 5vw; }
+  .container__social {
+    display: flex; }
+  .container__social--mobile {
+    display: none; } }
 
 .containerError {
   padding-top: 4em;
@@ -109,7 +158,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   background-color: var(--bs-secondary);
   color: white;
@@ -128,7 +177,7 @@ body {
     font-weight: 800;
     font-size: 2em;
     flex-grow: 1;
-    animation: logoAnimado infinite 10s 0s; }
+    animation: logoAnimado 1 3s 1s; }
   .navbar-expand-md--rojoT .navbar__link {
     font-size: 1.2em;
     font-weight: 200;
@@ -250,15 +299,20 @@ header {
 
 .icono {
   font-size: 30pt;
-  color: black; }
+  color: white; }
 
 .containerNoticiaG {
   font-size: 1em;
   padding: 0 2em;
   grid-area: noticiaG; }
-  .containerNoticiaG .containerNoticiaG__img {
-    width: 100%;
-    padding-bottom: 1em; }
+  .containerNoticiaG a {
+    text-decoration: none;
+    color: white; }
+    .containerNoticiaG a:hover {
+      color: rgba(255, 255, 255, 0.65); }
+    .containerNoticiaG a img {
+      width: 100%;
+      padding-bottom: 1em; }
 
 aside {
   height: 100%;
@@ -270,8 +324,12 @@ aside {
   font-size: 0.8em;
   grid-area: noticiasC; }
   aside .aside__containerNoticiaC {
-    width: 100%; }
-    aside .aside__containerNoticiaC .aside__img {
+    width: 100%;
+    text-decoration: none;
+    color: white; }
+    aside .aside__containerNoticiaC:hover {
+      color: rgba(255, 255, 255, 0.65); }
+    aside .aside__containerNoticiaC img {
       width: 100%; }
 
 .containerSpotify {
@@ -334,13 +392,13 @@ footer {
   aside {
     padding: 0 2em 0 0; }
   .footer__iconoFacebook {
-    color: black !important; }
+    color: white !important; }
   .footer__iconoInstagram {
-    color: black !important; }
+    color: white !important; }
   .footer__iconoSpotify {
-    color: black !important; }
+    color: white !important; }
   .footer__iconoTwitter {
-    color: black !important; }
+    color: white !important; }
   .footer__iconoFacebook:hover {
     color: #4267B2 !important; }
   .footer__iconoInstagram:hover {
@@ -358,9 +416,7 @@ footer {
 @keyframes logoAnimado {
   0% {
     transform: scale(1); }
-  70% {
-    transform: scale(1); }
-  80% {
+  33% {
     transform: scale(0.85); }
-  90% {
+  66% {
     transform: scale(1.15); } }
