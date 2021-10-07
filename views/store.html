@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,45 +10,125 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Tangófilx - Store</title>
-  </head>
-  <body>
+</head>
+<body>
 
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-md navbar-dark navbar-expand-md--rojoT" aria-label="Tangófile navbar">
-    <div class="container-fluid">
-        <a class="navbar__logoT" href="../index.html">TANGÓFILX</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTangofilx" aria-controls="navbarTangofilx" aria-expanded="false" aria-label="Botón navegador">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTangolifx">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link navbar__link" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar__link" aria-current="page" href="../index.html#tituloBio">Biografías</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar__link" aria-current="page" href="../index.html#tituloArt">Artículos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar__link" aria-current="page" href="../index.html#contacto">Contacto</a>
-                </li>
-                <li class="nav-item navbar__link">
-                    <a class="nav-link navbar__link--tienda" aria-current="page" href="./store.html">Tienda</a>
-                </li>       
-            </ul>
-
-            <form class="navbar__busqueda">
-            <input class="form-control navbar__busqueda" type="text" placeholder="Buscar" aria-label="Search">
-            </form>
-        </div>
-    </div>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-md navbar-expand-md--rojoT navbar-expand-md--rojoT--store" aria-label="Tangófile navbar">
+        <a class="navbar__logoT navbar__logoT--store" href="../index.html">TANGÓFILX</a>
+        <form class="navbarStore__busqueda">
+            <input class="form-control" type="text" placeholder="Buscar producto..." aria-label="Search">
+        </form>
+        <i class="fas fa-search"></i>
 </nav>
-  
-    <h1>Tienda</h1>
-    //Editar la página de la tienda
-    <p>Este es un cambio hecho desde Github<p>
-  </body>
+
+<h1 class="lyrics__title">Tienda</h1>
+
+<div class="containerStore">
+
+    <div class="containerStore__filtros">
+
+        <div class="containerStore__subtitle">
+            <h2>Todo</h2>
+            <p>12 resultados</p>
+        </div>
+
+        <h3>Categorías</h3>
+        <ul>
+            <li>Todo</li>
+            <li>Partituras</li>
+            <li>Afiches</li>
+            <li>Libros</li>
+            <li>Discos</li>
+        </ul>
+
+        <h3>Precios</h3>
+        <ul>
+            <li>Hasta $1.500</li>
+            <li>$1.500 a $3.500</li>
+            <li>Más de $3.500</li>
+        </ul>
+    </div>
+
+    <div class="containerStore__containerProductos">
+
+
+
+        <div class="containerStore__item">
+            <a href="#"><img src="../assets/img/store/afiche1.webp" alt="afiche tango"></a>
+            <div class="containerStore__text">
+                <div class="containerStore__header">
+                    <a href="#"><h2 class="">Como los nardos en flor</h2></a>
+                    <i class="far fa-heart"></i>
+                </div>
+                <p>Afiche</p>
+                <p class="containerStore__price">$2.500</p>
+            </div>
+        </div>
+        <div class="containerStore__item">
+            <a href="#"><img src="../assets/img/store/ferrerLibro.jpg" alt="afiche tango"></a>
+            <div class="containerStore__text">
+                <div class="containerStore__header">
+                    <a href="#"><h2 class="">Como los nardos en flor</h2></a>
+                    <i class="far fa-heart"></i>
+                </div>
+                <p>Libro</p>
+                <p class="containerStore__price">$1.299</p>
+            </div>
+        </div>
+        <div class="containerStore__item">
+            <a href="#"><img src="../assets/img/store/piazzollaLibro.webp" alt="afiche tango"></a>
+            <div class="containerStore__text">
+                <div class="containerStore__header">
+                    <a href="#"><h2 class="">Como los nardos en flor</h2></a>
+                    <i class="far fa-heart"></i>
+                </div>
+                <p>Libro</p>
+                <p class="containerStore__price">$980</p>
+            </div>
+        </div>
+        <div class="containerStore__item">
+            <a href="#"><img src="../assets/img/store/gardelAlbum.jpg" alt="afiche tango"></a>
+            <div class="containerStore__text">
+                <div class="containerStore__header">
+                    <a href="#"><h2 class="">Como los nardos en flor</h2></a>
+                    <i class="far fa-heart"></i>
+                </div>
+                <p>Afiche</p>
+                <p class="containerStore__price">$1.100</p>
+            </div>
+        </div>
+        <div class="containerStore__item">
+            <a href="#"><img src="../assets/img/store/afiche2.webp" alt="afiche tango"></a>
+            <div class="containerStore__text">
+                <div class="containerStore__header">
+                    <a href="#"><h2 class="">Como los nardos en flor</h2></a>
+                    <i class="far fa-heart"></i>
+                </div>
+                <p>Afiche</p>
+                <p class="containerStore__price">$1.100</p>
+            </div>
+        </div>
+        <nav aria-label="Page navigation Tangófile">
+            <ul class="pagination justify-content-center containerStore__navigation">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link containerStore__navigationLink" href="#">1</a></li>
+                <li class="page-item"><a class="page-link containerStore__navigationLink" href="#">2</a></li>
+                <li class="page-item"><a class="page-link containerStore__navigationLink" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link containerStore__navigationLink" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/1d0f8105a2.js" crossorigin="anonymous"></script>
+
+</body>
 </html>

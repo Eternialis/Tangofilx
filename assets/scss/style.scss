@@ -3,6 +3,7 @@
 @import './variables';
 @import './canciones';
 @import './error404';
+@import './store';
 
 
 
@@ -12,7 +13,7 @@ body {
     width: 98vw;
     height: 100vh;
     background-color: var(--bs-secondary);
-    color: white;
+    color: $rgbWhite;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -27,7 +28,7 @@ body {
         padding: 0 1em;
         text-decoration: none;
         text-align: center;
-        color: white;
+        color: $rgbWhite;
         font-weight: $commonFontWeight * 2;
         font-size: 2em;
         flex-grow: 1;
@@ -225,7 +226,7 @@ header {
 
 
     a {
-        @include linkNoticia;
+        @include link;
 
         img {
             width: 100%;
@@ -250,7 +251,7 @@ aside {
     //por qué la imagen determina el tamaño de las palabraS?
     .aside__containerNoticiaC {
         width: 100%;
-        @include linkNoticia;
+        @include link;
 
         img {
             width: 100%;
