@@ -2,7 +2,7 @@
 
 
 .lyrics__title {
-    padding: 1em 0.5em 0 0.5em;
+    padding: 0em 0.5em;
     font-weight: $commonFontWeight * 2;
     font-size: 5em;
     text-align: center;
@@ -68,7 +68,6 @@
 
     .item__card {
         background-color: var(--bs-primary);
-        //background-color: #074C78; (posible color secundario)
         width: fit-content;
         text-align: center;
         padding: 0.5em 1em;
@@ -111,14 +110,13 @@
 
     display: flex;
     flex-direction: column;
-    height: 940px;
+    flex-wrap: wrap;
     padding-left: 20px;
     animation: slideInRight 1 1s;
 
     .container__card {
 
         box-shadow: $boxshadow;
-        //No me toma el cursor pointer
         cursor: pointer;
         margin-bottom: 1em;
 
@@ -130,7 +128,6 @@
         }
 
         .card__text {
-            // no me funcionan las variables
             background-color: var(--bs-secondary);
         }
     }
@@ -156,10 +153,8 @@
     text-indent: 0;
 
     .container__shareIcon {
-
         padding: 0.3em;
         margin-right: 0.3em;
-
     }
 }
 

@@ -1,0 +1,102 @@
+@import 'variables.scss';
+
+
+
+.containerStoreItem {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+
+    img {
+        width: 50vw;
+        max-height: 80vh;
+        object-fit: contain;
+        animation: fadeInLeft 1 1s;
+    }
+
+    aside {
+        width: 300px;
+        margin-left: 2em;
+        padding: 1.5em;
+        padding-top: 1em;
+        background-color: $rgbWhite;
+        color: var(--bs-secondary);
+        border-radius: 1em;
+        box-shadow: $boxshadow;
+        animation: fadeInRight 1 1s;
+
+
+        .containerStoreItem__tag {
+            color: black;
+            font-weight: $commonFontWeight *2;
+            font-size: 1.3em
+        }
+
+
+
+        .containerStoreItem__precio {
+            display: flex;
+            align-items: center;
+
+
+            .containerStoreItem__viejoPrecio {
+                @include tachado;
+                margin: 0;
+            }
+
+            .containerStoreItem__nuevoPrecio {
+                color: var(--bs-primary);
+                font-weight: $commonFontWeight *2;
+                font-size: 3em;
+                margin: 0 0 0 0.5em;
+            }
+        }
+
+        a {
+            color: black;
+            margin-left: 0.5em;
+        }
+
+
+    }
+}
+
+.containerDescripcion {
+
+
+    h3 {
+        margin-top: 0.5em;
+    }
+
+    table {
+        margin: 2em 0;
+        border-collapse: separate;
+        border-spacing: 200px 2px;
+
+        th {
+            width: 150px;
+            background-color: var(--bs-primary);
+            padding-left: 1em;
+        }
+
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.formStore {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    input {
+        margin-top: 0.5em;
+    }
+
+    textarea {
+        height: 200px;
+        margin-top: 0.5em;
+    }
+}

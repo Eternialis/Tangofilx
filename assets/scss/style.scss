@@ -4,6 +4,7 @@
 @import './canciones';
 @import './error404';
 @import './store';
+@import './storeItem';
 
 
 
@@ -17,22 +18,37 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 
+
 .navbar-expand-md--rojoT {
     position: fixed;
     z-index: 150;
     background-color: var(--bs-primary);
     width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 
     .navbar__logoT {
-        padding: 0 1em;
+
         text-decoration: none;
-        text-align: center;
+        text-align: left;
         color: $rgbWhite;
         font-weight: $commonFontWeight * 2;
         font-size: 2em;
+        padding: 0;
+
         flex-grow: 1;
         animation: logoAnimado 1 3s 1s;
+
+    }
+
+    .navbar__logoT--tienda {
+        margin: 0 0.5em;
+
+        i {
+            margin: 0;
+            padding: 0;
+        }
     }
 
     .navbar__link {
@@ -46,31 +62,77 @@ body {
         }
     }
 
-    .navbar__link--tienda {
-        color: $rgbWhite !important;
-        background-color: var(--bs-primary);
-        border: solid 2px $rgbWhite;
-        border-radius: 0.5em;
-        font-weight: $commonFontWeight * 2;
-        padding: 0.35em 0.5em;
-
-        &:hover {
-            color: var(--bs-primary) !important;
-            background-color: $rgbWhite;
-            font-weight: $commonFontWeight * 2;
-
-        }
-
-
-    }
-
     .navbar__busqueda {
-        padding-right: 1em;
+
+        max-width: 300px;
+        margin-right: 1em;
     }
 
 }
 
+.conMargen {
+    margin: $commonMargin;
 
+    h2 {
+        margin-top: 2em;
+    }
+}
+
+.navBread {
+    padding-top: 100px;
+    margin: $commonMargin;
+}
+
+//Seccion de intereses de todas las páginas
+
+.interesesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+
+    .interesesContainer__card {
+
+        width: 280px;
+        background-color: var(--bs-primary);
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5em;
+        overflow: hidden;
+        margin-right: 0.5em;
+        box-shadow: $boxshadow;
+        color: $rgbWhite;
+        text-decoration: none;
+        margin-bottom: 2em;
+
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        .interesesContainer__text {
+            margin: 0.5em 1em;
+
+            .interesesContainer__title {
+                font-size: 1em;
+                font-weight: $commonFontWeight * 2;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .viejoPrecio {
+                @include tachado;
+            }
+        }
+    }
+}
 
 .grilla {
     width: 98vw;
@@ -131,11 +193,12 @@ header {
 }
 
 .seccionesMain {
-    padding-left: 1em;
+
     font-size: 2.5em;
     font-weight: $commonFontWeight * 2;
     text-transform: uppercase;
-    /* border-bottom: white solid 2px; */
+    border-bottom: white solid 1px;
+    margin-top: 1em;
 }
 
 .subtitulo {
@@ -237,7 +300,7 @@ header {
 
 
 
-aside {
+.containerNoticiaC {
     height: 100%;
     padding: $commonPadding;
     display: flex;
@@ -249,7 +312,7 @@ aside {
 
 
     //por qué la imagen determina el tamaño de las palabraS?
-    .aside__containerNoticiaC {
+    .containerNoticiaC__item {
         width: 100%;
         @include link;
 
@@ -371,7 +434,7 @@ footer {
         padding: 0 0 0 2em;
     }
 
-    aside {
+    .containerNoticiaC {
         padding: 0 2em 0 0;
 
     }
@@ -394,17 +457,45 @@ footer {
 
 }
 
+@media only screen and (min-width: 1350px) {
 
-@media only screen and (min-width: 950px) {
-
+    .conMargen {
+        margin: 0 250px;
+    }
 
     .navbar__logoT {
         text-align: left;
-        padding-left: 2em;
+        margin-left: 3em;
     }
 
 
+
+    .navbar__link {
+        margin-right: 1em;
+    }
+
 }
+
+@media only screen and (min-width: 768px) {
+
+
+    .navbar__logoT--tienda {
+        margin: 0 3em;
+    }
+
+    .navbar__busqueda {
+        width: 25vw;
+        margin-right: 1em;
+    }
+
+    .interesesContainer {
+
+        flex-direction: row;
+
+
+    }
+}
+
 
 @keyframes logoAnimado {
 

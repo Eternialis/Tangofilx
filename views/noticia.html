@@ -20,10 +20,10 @@
         <div class="container-fluid">
             <a class="navbar__logoT" href="../index.html">TANGÓFILX</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTangofilx" aria-controls="navbarTangofilx" aria-expanded="false" aria-label="Botón navegador">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarTangolifx">
+    
+            <div class="collapse navbar-collapse" id="navbarTangofilx">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link navbar__link" aria-current="page" href="../index.html">Inicio</a>
@@ -37,16 +37,23 @@
                     <li class="nav-item">
                         <a class="nav-link navbar__link" aria-current="page" href="../index.html#contacto">Contacto</a>
                     </li>
-                    <li class="nav-item navbar__link">
-                        <a class="nav-link navbar__link--tienda" aria-current="page" href="./store.html">Tienda</a>
+                    <li class="nav-item">
+                        <a class="nav-link navbar__link" aria-current="page" href="./store.html">Tienda</a>
                     </li>       
                 </ul>
-
-                <form class="navbar__busqueda">
-                <input class="form-control navbar__busqueda" type="text" placeholder="Buscar" aria-label="Search">
+                <form>
+                    <input class="form-control navbar__busqueda" type="text" placeholder="Buscar" aria-label="Search">
                 </form>
             </div>
         </div>
+    </nav>
+
+    <nav aria-label="breadcrumb" class="navBread">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">TANGÓFILX</a></li>
+            <li class="breadcrumb-item"><a href="./store.html">Noticias</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Salvaguardar el tango</li>
+        </ol>
     </nav>
 
     <h1 class="lyrics__title">Salvaguardar el tango</h1>
@@ -165,9 +172,36 @@
     </div>
 
 
+<!-- Seccion ver más -->
+<section class="conMargen">
+    <h2>También te puede interesar:</h2>
+    <div class="interesesContainer">
+        <a href="./canciones.html" class="interesesContainer__card">
+            <img src="../assets/img/caminitoOlta.jpg" alt="">
+            <div class="interesesContainer__text">
+                <h3 class="interesesContainer__title">Caminito</h3>
+                <p>Canción</p>
+            </div>
+        </a>
+        <a href="#" class="interesesContainer__card">
+            <img src="../assets/img/imgBio/anibalTroiloBio.jpg" alt="">
+            <div class="interesesContainer__text">
+                <h3 class="interesesContainer__title">Quejas de bandoneón</h3>
+                <p>Canción</p>
+            </div>
+        </a>
+        <a href="./storeItem.html" class="interesesContainer__card">
+            <img src="../assets/img/store/gardelAlbum.jpg" alt="">
+            <div class="interesesContainer__text">
+                <h3 class="interesesContainer__title">Mano a mano - Carlos Gardel</h3>
+                <p>Producto</p>
+            </div>
+        </a>
+    </div>
+  </section>
 
 
-
+<!-- Modals -->
     <div class="modal fade modalContainer" id="lucaHardmeierModal" tabindex="-1" aria-labelledby="LucaHardmeierLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
