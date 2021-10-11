@@ -147,7 +147,7 @@ body {
         "biografias"
         "noticiaG"
         "noticiasC"
-        "spotify"
+        "canciones"
         "footer";
 }
 
@@ -198,7 +198,6 @@ header {
     font-weight: $commonFontWeight * 2;
     text-transform: uppercase;
     border-bottom: white solid 1px;
-    margin-top: 1em;
 }
 
 .subtitulo {
@@ -210,6 +209,10 @@ header {
 
 
     grid-area: biografias;
+
+    h2 {
+        margin-left: 1em;
+    }
 
     .containerBiografias__containerCarousel {
         width: 100vw;
@@ -231,10 +234,6 @@ header {
                     opacity: 0.4;
                     border: outset 2px white;
                     cursor: pointer;
-                    //nofunciona :C
-                    // :not(&) {
-                    //     opacity: 0.7;
-                    // }
                 }
 
                 &:active {
@@ -244,12 +243,14 @@ header {
 
             .containerBiografias__texto {
                 position: absolute;
-                transform: rotate(-90deg);
-                text-align: right;
-                right: -1.8em;
-                bottom: 2.5em;
+                text-align: center;
+                left: 0em;
+                top: 0em;
+                right: 0;
+                padding: 0;
+                margin: 0;
                 font-weight: $commonFontWeight;
-                font-size: 1.5em;
+                font-size: 1em;
                 background-color: #1c1c1cb0;
 
 
@@ -305,7 +306,7 @@ header {
     padding: $commonPadding;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     font-size: 0.8em;
     grid-area: noticiasC;
@@ -322,10 +323,10 @@ header {
     }
 }
 
-.containerSpotify {
+.containerCanciones {
     margin-top: 2em;
     padding: $commonPadding;
-    grid-area: spotify;
+    grid-area: canciones;
 
 }
 
@@ -334,6 +335,10 @@ footer {
     padding: 1em 2em;
     font-size: 0.8em;
     grid-area: footer;
+
+    p {
+        margin: 0;
+    }
 
     .footer__containerRedes {
         display: flex;
@@ -394,8 +399,24 @@ footer {
 }
 
 
+
+// Media Queries
 @media only screen and (min-width: 768px) {
 
+    .navbar__logoT--tienda {
+        margin: 0 3em;
+    }
+
+    .navbar__busqueda {
+        width: 25vw;
+        margin-right: 1em;
+    }
+
+    .interesesContainer {
+
+        flex-direction: row;
+
+    }
 
     .grilla {
         grid-template-columns: 65% 35%;
@@ -404,7 +425,7 @@ footer {
             "header header"
             "biografias biografias"
             "noticiaG noticiasC"
-            "spotify spotify"
+            "canciones canciones"
             "footer footer";
     }
 
@@ -415,20 +436,23 @@ footer {
         }
     }
 
-    .containerBiografias__containerCarousel {
+
+    .containerBiografias__texto {
+
+        font-weight: $commonFontWeight * 2 !important;
+        font-size: 1.5em !important;
+        z-index: -1;
+        text-align: right !important;
+
+        transform: rotate(-90deg);
+        transform-origin: 100% 100%;
+        right: -1em;
+        top: 0;
 
 
-        .containerBiografias__containerItem {
 
-            .containerBiografias__texto {
-
-                font-weight: $commonFontWeight * 1.5 !important;
-                font-size: 2em;
-                z-index: -1;
-
-            }
-        }
     }
+
 
     .containerNoticiaG {
         padding: 0 0 0 2em;
@@ -474,26 +498,6 @@ footer {
         margin-right: 1em;
     }
 
-}
-
-@media only screen and (min-width: 768px) {
-
-
-    .navbar__logoT--tienda {
-        margin: 0 3em;
-    }
-
-    .navbar__busqueda {
-        width: 25vw;
-        margin-right: 1em;
-    }
-
-    .interesesContainer {
-
-        flex-direction: row;
-
-
-    }
 }
 
 
